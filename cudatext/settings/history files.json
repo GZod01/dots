@@ -1,0 +1,106 @@
+{
+  "|home|aurel|.config|cudatext|settings|user.json" : {
+    "lexer" : "JSON",
+    "enc" : "UTF-8",
+    "tab_size" : 2,
+    "tab_spaces" : true,
+    "crt" : "0,0,-1,-1,"
+  },
+  "|home|aurel|WeRobot2022-2023|server.py" : {
+    "lexer" : "Python",
+    "enc" : "UTF-8",
+    "tab_size" : 4,
+    "tab_spaces" : true,
+    "crt" : "0,38,-1,-1,"
+  },
+  "|home|aurel|WeRobot2022-2023|Robot.py" : {
+    "lexer" : "Python",
+    "enc" : "UTF-8",
+    "tab_size" : 4,
+    "tab_spaces" : true,
+    "crt" : "12,6,-1,-1,"
+  },
+  "|home|aurel|WeRobot2022-2023|client.py" : {
+    "lexer" : "Python",
+    "enc" : "UTF-8",
+    "top" : 12,
+    "tab_size" : 4,
+    "tab_spaces" : true,
+    "crt" : "0,20,-1,-1,"
+  },
+  "|home|aurel|WeRobot2022-2023|client.html" : {
+    "lexer" : "HTML",
+    "enc" : "UTF-8",
+    "tab_size" : 4,
+    "tab_spaces" : false,
+    "crt" : "0,24,0,23,"
+  },
+  "|home|aurel|fichier.html" : {
+    "lexer" : "HTML",
+    "enc" : "UTF-8",
+    "tab_size" : 4,
+    "tab_spaces" : false,
+    "crt" : "9,0,-1,-1,"
+  },
+  "|home|aurel|System|pybatterywarn.py" : {
+    "lexer" : "Python",
+    "enc" : "UTF-8",
+    "tab_size" : 4,
+    "tab_spaces" : true,
+    "scale" : 120,
+    "crt" : "89,2,-1,-1,"
+  },
+  "|home|aurel|batteriecheck.py" : {
+    "lexer" : "Python",
+    "enc" : "UTF-8",
+    "top" : 6,
+    "tab_size" : 4,
+    "tab_spaces" : true,
+    "crt" : "0,0,63,10,"
+  },
+  "|home|aurel|.Xresources" : {
+    "enc" : "UTF-8",
+    "tab_size" : 4,
+    "tab_spaces" : false,
+    "crt" : "6,35,-1,-1,"
+  },
+  "|home|aurel|dots|custom_status|wrapper.py" : {
+    "lexer" : "Python",
+    "enc" : "UTF-8",
+    "tab_size" : 4,
+    "tab_spaces" : true,
+    "crt" : "0,0,-1,-1,"
+  },
+  "|home|aurel|.config|i3status|config" : {
+    "enc" : "UTF-8",
+    "tab_size" : 4,
+    "tab_spaces" : false,
+    "crt" : "17,26,-1,-1,"
+  },
+  "|home|aurel|dots|nvim|init.vim" : {
+    "enc" : "UTF-8",
+    "tab_size" : 2,
+    "tab_spaces" : true,
+    "crt" : "0,144,0,0,"
+  },
+  "|home|aurel|.config|nvim|init.vim" : {
+    "enc" : "UTF-8",
+    "top" : 89,
+    "tab_size" : 4,
+    "tab_spaces" : false,
+    "crt" : "18,98,-1,-1,"
+  },
+  "|home|aurel|.config|nvim|init.lua" : {
+    "lexer" : "Lua",
+    "enc" : "UTF-8",
+    "tab_size" : 2,
+    "tab_spaces" : true,
+    "crt" : "37,608,18,608,"
+  },
+  "|home|aurel|.config|i3|config" : {
+    "enc" : "UTF-8",
+    "tab_size" : 4,
+    "tab_spaces" : false,
+    "crt" : "25,104,-1,-1,"
+  }
+}

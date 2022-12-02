@@ -1,0 +1,111 @@
+general {
+    output_format = "i3bar"
+    markup = "pango"
+    interval = 1
+    colors = true
+    color_good = '#88b090'
+    color_degraded = '#ccdc90'
+    color_bad = '#e89393'
+}
+
+order += "volume master"
+order += "disk /"
+#order += "disk /mnt/data"
+order += "disk /home"
+#order += "run_watch DHCP"
+#order += "ipv6"
+#order += "run_watch VPN"
+order += "wireless wlp2s0"
+order += "ethernet enp3s0f1"
+order += "battery 1"
+order += "memory"
+order += "cpu_temperature 0"
+#order += "cpu_usage 0"
+#order += "load"
+#order += "tztime local"
+
+wireless wlp2s0 {
+    format_up = "%quality  %essid %ip"
+    format_down = ""
+}
+
+ethernet enp3s0f1 {
+    #if you use %speed, i3status requires root privileges
+    format_up = "E: %ip"
+    format_down = ""
+}
+
+battery 1 {
+    path = "/sys/class/power_supply/BAT0/uevent"
+    format = "<span foreground='#6a89cc'>%status%percentage</span>"
+    format_down = "No battery"
+    last_full_capacity = true
+    integer_battery_capacity = true
+    low_threshold = 11
+    threshold_type = percentage
+    hide_seconds = true
+    status_chr = " "
+    status_bat = " "
+    status_unk = " "
+    status_full = " "
+}
+
+run_watch DHCP {
+    pidfile = "/var/run/dhclient*.pid"
+}
+
+run_watch VPN {
+    pidfile = "/var/run/vpnc/pid"
+}
+
+tztime local {
+    format = " %e/%m/%Y  %H:%M:%S"
+    timezone = "Europe/Paris"
+}
+
+memory {
+        format = "RAM %used"
+        threshold_degraded = "200M"
+        format_degraded = "Memory < %available"
+}
+
+load {
+    format = " %1min"
+}
+
+cpu_usage {
+    format = " %usage"
+}
+
+cpu_temperature 0 {
+	format = "<span foreground='#EA2027'> Processeur:</span> %degrees°C"
+}
+
+disk "/" {
+	format = "<span foreground='#FFC312'> %avail</span>"
+	prefix_type	= custom
+	low_threshold = 20
+	threshold_type = percentage_avail
+}
+
+disk "/mnt/data" {
+        format = "<span foreground='#FFC312'>  %avail</span>"
+        prefix_type     = custom
+        low_threshold = 20
+        threshold_type = percentage_avail
+}
+
+disk "/home" {
+        format = "<span foreground='#C4E538'> Leaked data: %avail</span>"
+        prefix_type = custom
+        low_threshold = 20
+        threshold_type = percentage_avail
+}
+
+volume master {
+    format = "<span foreground='#9980FA'> %volume</span>"
+    format_muted = " "
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}

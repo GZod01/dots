@@ -1,0 +1,59 @@
+import asyncio
+import websockets
+import curses
+import sys,os
+from pyPS4Controller.controller import Controller
+connection = None
+"""
+async def test():
+    global connection 
+    async with websockets.connect('ws://192.168.1.49:8000') as websocket:
+        
+        connection = websocket
+        await websocket.send('hello')
+        response = await websocket.recv()
+        print(response)
+"""
+a=0
+d=0
+g=0
+r=0
+def prgrm(stdscr):
+    k = 0
+    r=0
+    a=0
+    d=0
+    g=0
+    i=0
+#q for exit
+#s for stop
+    while (k != ord('q')):
+        stdscr.clear()
+        if k == curses.KEY_DOWN:
+            connection.send('down')
+        elif (k == curses.KEY_UP):
+            connection.send('up')
+        elif (k == curses.KEY_RIGHT):
+            connection.send('right')
+        elif (k == curses.KEY_LEFT):
+            connection.send('left')
+        elif (k == ord('s')):
+            connection.send('stopit')
+        elif (k == ord('e')):
+            connection.send('exit')
+        stdscr.refresh()
+        k = stdscr.getch()
+
+async def main_loop():
+    global connection 
+      as websocket:
+        connection = websockets.connect('ws://192.168.1.49:8000')
+        await connection.send('bonjour')
+    curses.wrapper(prgrm)
+        
+def main():
+    asyncio.get_event_loop().run_until_complete(main_loop())
+
+if __name__ == "__main__":
+    main()
+

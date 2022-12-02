@@ -1,0 +1,65 @@
+{
+  "pos" : {
+    "main_max" : false,
+    "main" : "0,20,1596,856"
+  },
+  "show_sidepanel" : true,
+  "show_bottom" : true,
+  "float_side" : false,
+  "float_bottom" : false,
+  "size_side" : 200,
+  "size_bottom" : 120,
+  "tab_left" : "Code tree",
+  "tab_bottom" : "Validate",
+  "recent_files" : [
+    "~/.config/i3/config",
+    "~/.config/nvim/init.lua",
+    "~/.config/nvim/init.vim",
+    "~/dots/nvim/init.vim",
+    "~/.config/i3status/config",
+    "~/dots/custom_status/wrapper.py",
+    "~/.Xresources",
+    "~/batteriecheck.py",
+    "~/System/pybatterywarn.py",
+    "~/fichier.html"
+  ],
+  "list_console" : [
+  ],
+  "finder" : {
+    "regex" : false,
+    "case" : false,
+    "words" : false,
+    "back" : false,
+    "confirm" : false,
+    "wrap" : false,
+    "insel" : false,
+    "tokens" : 0,
+    "mline" : false,
+    "hi" : false,
+    "regex_subst" : true
+  },
+  "lang" : "",
+  "session" : "history session.json",
+  "last_cmd" : 0,
+  "groups" : 1,
+  "gr" : {
+    "panel" : "0,68",
+    "pages" : "100,100,0,68,0,68,0,68,0,68,0,68,"
+  },
+  "sync_choose_themes" : true,
+  "list_find" : [
+    "screen",
+    "Pictures",
+    "feh",
+    "bg",
+    "backg",
+    "back",
+    "font",
+    "Fira",
+    "$mod+1",
+    "workspace",
+    "$mod+n"
+  ],
+  "list_replace" : [
+  ]
+}
